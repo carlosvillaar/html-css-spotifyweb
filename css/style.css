@@ -1,0 +1,182 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* UTILS */
+
+body{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.debug{
+  border: 1px solid red;
+}
+
+.flex{
+  display: flex;
+}
+
+h2,
+h4{
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+ul li{
+  list-style: none;
+  line-height: 30px;
+}
+
+p{
+  color: grey;
+}
+
+/*body*/
+
+.main-wrapper{
+height: 100vh;
+}
+
+main{
+  height: calc(100% - 90px);
+}
+
+aside{
+  width: 230px;
+  height: 100%;
+  background-color: #000000;
+  padding-top: 10px;
+  padding-left: 20px;
+
+}
+
+.aside-top{
+  color: grey;
+}
+
+.logo{
+  width: 150px;
+  padding-bottom: 20px;
+}
+
+.aside-top a:hover{
+  color: white;
+}
+
+.aside-top ul li img{
+  height: 30px;
+}
+
+.plus{
+  width: 50px;
+  height: 50px;
+  background-color: grey;
+  color: black;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.aside-bottom{
+  padding-top: 150px;
+}
+
+.download{
+  width: 20px;
+  color: gray;
+}
+
+.line{
+  border-bottom: 1px solid grey;
+  border-radius: 2px;
+  width: 185px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.profile{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%  ;
+  background-color: grey;
+  padding: 6px;
+  color: white;
+}
+
+.content{
+  width: calc(100% - 230px);
+  background-color: #141922;
+  overflow: auto;
+}
+
+.content li a{
+  color: grey;
+}
+
+.bar{
+  padding-top: 15px;
+  gap: 35px;
+  justify-content: center;
+}
+
+.bar a:hover{
+  border-bottom: 2px solid yellowgreen;
+}
+
+.cta{
+  height: 80px;
+  background-color: #090B13;
+}
+
+.cta button{
+  padding: 10px 30px;
+  border-radius: 30px;
+  border: 1px solid white;
+  background-color: inherit;
+  color: white;
+}
+
+.btn{
+  display: flex;
+  height: 80px;
+  padding-right: 5px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.title{
+  padding-left: 10px;
+}
+
+.card-container{
+  width: 100%;
+  margin: 10px;
+}
+
+.row{
+  flex-direction: row;
+  width: calc(100% / 6)-5px;
+}
+
+.col{
+  flex-direction: column;
+  align-items: center;
+  padding: 0 5px;
+}
+
+.col img{
+  height: 180px;
+}
+
+footer{
+  height: 90px;
+  background-color: #282828;
+}
