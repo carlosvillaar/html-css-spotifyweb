@@ -1,12 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
-  <title>Spotify</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Spotify</title>
+  </head>
+  <body>
+    <div class="main-wrapper">
+      <main class="flex">
+        <aside>
+          <div class="aside-top">
+            <a class="logo" href="#"
+              ><img class="logo" src="./img/logo.svg" alt="logo"
+            /></a>
+            <ul>
+              <li>
+                <a href="#"><img src="./img/home.svg" alt="home" />Home</a>
+              </li>
+              <li>
+                <a href="#"><img src="./img/search.svg" alt="search" />Cerca</a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="./img/libreria.svg" alt="libreria" />La tua
+                  libreria</a
+                >
+              </li>
+            </ul>
+            <h4>PLAYLIST</h4>
+            <ul>
+              <li>
+                <div class="plus flex"><i class="fa-solid fa-plus"></i></div>
+                Crea Playlist
+              </li>
+              <li><a href="#">Nome Playlist</a></li>
+              <li><a href="#">Nome Playlist</a></li>
+              <li><a href="#">Nome Playlist</a></li>
+              <li><a href="#">Nome Playlist</a></li>
+              <li><a href="#">Nome Playlist</a></li>
+              <li><a href="#">Nome Playlist</a></li>
+            </ul>
+          </div>
+          <div class="aside-bottom">
+            <div class="download">
+              <a href="#"
+                ><img src="./img/download.svg" alt="download" /> Installa app</a
+              >
+            </div>
+            <div class="line"></div>
+            <div class="profile">
+              <a href="#"
+                ><img src="/img/profile.svg" alt="profile" />John Doe</a
+              >
+            </div>
+          </div>
+        </aside>
+        <div class="content">
+          <div class="cta">
+            <div class="btn"><button><a href="#">EFFETTUA L'UPGRADE</a></button></div>
+          </div>
+          <div class="inner">
+            <nav>
+              <ul class="flex bar">
+                <li><a href="#">IN EVIDENZA</a></li>
+                <li><a href="#">PODCAST</a></li>
+                <li><a href="#">CLASSIFICHE</a></li>
+                <li><a href="#">GENERI E MOOD</a></li>
+                <li><a href="#">NUOVE USCITE</a></li>
+                <li><a href="#">SCOPRI</a></li>
+              </ul>
+            </nav>
+
+            <div class="title"><h2>Recently played</h2></div>
+            <div class="card-container flex debug">
+              <div class="flex debug row">
+                <div class="col debug flex">
+                  <img src="./img/metal_lifting.jpg" alt="album1" />
+                  <h4>Heavy Metal</h4>
+                  <p>Subtitle</p>
+                </div>
+                <div class="col flex">
+                  <img src="./img/stranger.jpeg" alt="album2" />
+                  <h4>Stranger Things</h4>
+                  <p>Subtitle</p>
+                </div>
+                <div class="col flex">
+                  <img src="./img/aquietplace.jpeg" alt="album3" />
+                  <h4>A quiet place</h4>
+                  <p>Subtitle</p>
+                </div>
+                <div class="col flex">
+                  <img src="./img/split.jpeg" alt="album4" />
+                  <h4>Split</h4>
+                  <p>Subtitle</p>
+                </div>
+                <div class="col flex">
+                  <img src="./img/cure.jpeg" alt="album5" />
+                  <h4>A cure for welness</h4>
+                  <p>Subtitle</p>
+                </div>
+                <div class="col flex">
+                  <img src="./img/sinister.jpeg" alt="album6" />
+                  <h4>Sinister</h4>
+                  <p>Subtitle</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer></footer>
+    </div>
+  </body>
 </html>
