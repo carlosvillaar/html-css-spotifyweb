@@ -96,6 +96,13 @@ aside{
   padding-top: 30px;
   line-height: 40px;
   color: grey;
+  height: calc(100% - 160px);
+}
+
+.list-playlist{
+  height: calc(100% - 125px);
+  line-height: 35px;
+  overflow: auto;
 }
 
 .playlist h4{
@@ -116,9 +123,6 @@ aside{
   padding-bottom: 7px;
 }
 
-.list-playlist{
-  overflow: auto;
-}
 
 .plus{
   width: 50px;
@@ -148,6 +152,10 @@ aside{
   padding-bottom: 10px;
 }
 
+.download:hover{
+  color: white;
+}
+
 .line {
   border-bottom: 1px solid grey;
   border-radius: 2px;
@@ -167,6 +175,7 @@ aside{
   align-items: center;
   gap: 7px;
   padding-top: 10px;
+  padding-bottom: 5px;
 }
 
 .content{
@@ -228,7 +237,7 @@ aside{
 
 .row {
   flex-direction: row;
-  width: calc(100% / 6)-5px;
+  width: calc(100% / 6) - 5px;
 }
 
 .col {
@@ -266,9 +275,10 @@ aside{
 /*FOOTER*/
 
 footer{
+  width: 100%;
   height: 90px;
   background-color: #282828;
-  position: sticky;
+  position: fixed;
   bottom: 0;
 }
 
@@ -334,6 +344,10 @@ footer{
   margin: 0 12px;
 }
 
+.play:hover{
+  font-size: 2.5rem;
+}
+
 .elapse > div{
   display: flex;
   justify-content: space-between;
@@ -359,6 +373,10 @@ footer{
   background-color: white;
   border-radius: 5px;
   width: 20%;
+}
+
+.second-bar:hover{
+  background-color: greenyellow;
 }
 
 .player-volume{
@@ -454,25 +472,55 @@ footer{
 
    .profile{
     padding-left: 10px;
-    padding-bottom: 5px;
    }
 }
 
 
 @media screen and (max-width: 700px) {
    .row{
-       width: calc(100% / 4) -5px;
-       flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 100%;
    }
+
+   .col{
+    width: calc(100% / 2);
+    flex-wrap: wrap;
+   }
+
+   .title{
+    padding-left: 38px;
+   }
+
    .menu{
     flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+   }
+
+   .playlist{
+    flex-grow: 1;
+    padding-top: 0;
+   }
+
+   .icon{
+    display: inline-block;
+    padding-bottom: 50px;
+    padding-right: 20px;
    }
 }
 
 
 @media screen and (max-width: 1100px){
    .row{
-       width: calc(100% / 6) -5px;
        flex-wrap: wrap;
+   }
+
+   .menu{
+    flex-wrap: wrap;
+   }
+   
+   .playlist{
+    flex-grow: 1;
+    padding-top: 0;
    }
 }
