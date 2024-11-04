@@ -346,12 +346,3 @@ footer{
   border-radius: 5px;
   width: 40%;
 }
-
-@media screen and (max-width:600px){
-  aside{
-    width: 50px;
-  }
-  .content{
-    width: calc(100% - 50px);
-  }
-}
