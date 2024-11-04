@@ -15,7 +15,7 @@
 
   <div class="main-wrapper">
     <main class="flex">
-      <aside>
+      <aside class="flex">
         <div class="logo">
           <a href="#"><img class="logo" src="./img/logo.svg" alt="logo"/></a>
         </div>
@@ -23,20 +23,20 @@
         <nav class="main-menu">
           <ul>
             <li>
-              <a href="#"><img src="./img/home.svg" alt="home"/>Home</a>
+              <a href="#"><img src="./img/home.svg" alt="home"/><span class="none">Home</span></a>
             </li>
             <li>
-              <a href="#"><img src="./img/search.svg" alt="search"/>Cerca</a>
+              <a href="#"><img src="./img/search.svg" alt="search"/><span class="none">Cerca</span></a>
             </li>
             <li>
               <a href="#"
-              ><img src="./img/libreria.svg" alt="libreria"/>La tua
-              libreria</a
+              ><img src="./img/libreria.svg" alt="libreria"/><span class="none">La tua
+                libreria</span></a
               >
             </li>
           </ul>
         </nav>
-        <div class="playlist">
+        <div class="playlist none">
           <h4>PLAYLIST</h4>
           <div class="create-playlist flex">
             <div class="plus flex"><a href="#"><i class="fa-solid fa-plus"></i></a></div>
@@ -54,12 +54,12 @@
         <div class="bottom">
           <div class="download">
             <a href="#"><img src="./img/download.svg" alt="download"/></a>
-            <a href="#">Installa app</a>
+            <a href="#"><span class="none">Installa app</span></a>
           </div>
-          <div class="line"></div>
+          <div class="line none"></div>
           <div class="profile">
             <a href="#"><img src="/img/profile.svg" alt="profile" /></a>
-            <a href="#">John Doe</a>
+            <a href="#"><span class="none">John Doe</span></a>
           </div>
         </div>
       </aside>
@@ -158,8 +158,8 @@
         <div class="player-song flex">
           <img src="./img/sinister.jpeg" alt="sinister">
             <div class="near-text flex">
-              <h5>Sinister</h5>
-              <p>Brano Nome</p>
+              <a href="#"><h5>Sinister</h5></a>
+              <a href="#"><p>Brano Nome</p></a>
             </div>
             <div class="icon flex">
               <a href="#"><i class="fa-regular fa-heart"></i></a>
