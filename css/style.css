@@ -179,6 +179,11 @@ aside{
   color: white;
 }
 
+.cta button:hover{
+  padding: 13px 33px;
+  font-size: 1rem;
+}
+
 .btn{
   display: flex;
   height: 80px;
@@ -192,6 +197,10 @@ aside{
   gap: 35px;
   justify-content: center;
   color: grey;
+}
+
+.menu a:hover{
+  color: white;
 }
 
 .card-container {
@@ -264,6 +273,10 @@ footer{
   padding-top: 17px;
   color: grey;
   gap: 10px;
+}
+
+.icon a:hover{
+  color: white;
 }
 
 .player-controls{
@@ -345,4 +358,19 @@ footer{
   background-color: gray;
   border-radius: 5px;
   width: 40%;
+}
+
+@media screen and (max-width:600px){
+}
+@media screen and (max-width:700px){
+
+  .row{
+    flex-wrap: wrap;
+  
+  }
+
+  .menu{
+    flex-wrap: wrap;
+  }
+
 }
