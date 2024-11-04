@@ -64,6 +64,10 @@ aside{
   padding-bottom: 10px;
 }
 
+.small-logo{
+  display: none;
+}
+
 .main-menu img{
   height: 30px;
 }
@@ -361,6 +365,22 @@ footer{
 }
 
 @media screen and (max-width:600px){
+  aside{
+    width: 50px;
+    padding-left: 10px;
+  }
+  .content{
+    width: calc(100% - 50px);
+  }
+  .small-logo{
+    display:block;
+  }
+  .logo{
+    display: none;
+  }
+  .playlist{
+    display: none;
+  }
 }
 @media screen and (max-width:700px){
 
