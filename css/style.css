@@ -173,6 +173,7 @@ aside{
   position: sticky;
   top: 0;
   opacity: .8;
+  z-index: 999;
 }
 
 .cta button{
@@ -225,6 +226,7 @@ aside{
   flex-direction: column;
   align-items: center;
   padding: 0 5px;
+  position: relative;
 }
 
 .popular img{
@@ -233,6 +235,22 @@ aside{
 
 .col img {
   height: 180px;
+}
+
+.col img:hover{
+  opacity: .3;
+}
+
+.col:hover::before{
+  content: '\f144';
+  font-family: 'Font Awesome\ 5 Free';
+  font-weight: 900;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 3rem;
+  color: white;
 }
 
 /*FOOTER*/
@@ -364,33 +382,53 @@ footer{
   width: 40%;
 }
 
-@media screen and (max-width:600px){
+@media screen and (max-width: 600px){
+
   aside{
     width: 50px;
-    padding-left: 10px;
   }
+
   .content{
     width: calc(100% - 50px);
   }
-  .small-logo{
-    display:block;
-  }
+
   .logo{
     display: none;
   }
-  .playlist{
-    display: none;
+
+  .small-logo{
+    display: block;
   }
-}
-@media screen and (max-width:700px){
 
   .row{
-    flex-wrap: wrap;
-  
+   width: calc(100% -5px);
+   flex-wrap: wrap;
   }
+  
 
   .menu{
     flex-wrap: wrap;
-  }
+   }
 
+   .playlist{
+    display: none;
+   }
+}
+
+
+@media screen and (min-width: 700px) {
+   .row{
+       width: calc(100% / 4) -5px;
+       flex-wrap: wrap;
+   }
+   .menu{
+    flex-wrap: wrap;
+   }
+}
+
+
+@media screen and (min-width: 1100px){
+   .row{
+       width: calc(100% / 6) -5px;
+   }
 }
